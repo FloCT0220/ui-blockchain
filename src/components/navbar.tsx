@@ -27,14 +27,7 @@ const Navbar = () => {
       setIsEditing(!isEditing); // Toggle between edit and save modes
     };
   
-    const togglePasswordVisibility = () => {
-      setIsPasswordVisible(!isPasswordVisible); // Toggle password visibility
-    };
-  
-    const hashPassword = (password) => {
-      // Simple hash simulation (replace with a real hash function like bcrypt in production)
-      return password.split("").map(() => "*").join("");
-    };
+
   
 
   return (
