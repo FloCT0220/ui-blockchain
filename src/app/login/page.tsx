@@ -3,7 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 
-const Test = () => {
+function Login()  {
   const router = useRouter(); // Use useRouter for navigation in Client Components
 
 
@@ -50,4 +50,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Login;

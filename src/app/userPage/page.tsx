@@ -3,17 +3,17 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 
-const MainPage = () => {
-  const router = useRouter(); // Use useRouter for navigation in Client Components
+function MainPage() {
+    const router = useRouter(); // Use useRouter for navigation in Client Components
 
-  const sell = () => {
-
-    router.push('/userPage/sell'); 
-  };
-  const buy = () => {
-
-    router.push('/userPage/buy'); 
-  };    
+    const sell = () => {
+  
+      router.push('/userPage/sell'); 
+    };
+    const buy = () => {
+  
+      router.push('/userPage/buy'); 
+    };
   return (
     <div className='h-screen'>
         <h1 className="text-3xl font-bold underline text-center">Welcome to the Blockchain</h1>

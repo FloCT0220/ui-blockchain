@@ -3,7 +3,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 
-const Register = () => {
+function Register()  {
   const router = useRouter(); // Use useRouter for navigation in Client Components
 
   const toHomePage = () => {

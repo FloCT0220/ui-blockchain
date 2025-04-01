@@ -1,8 +1,10 @@
 import React from 'react'
 
-const buy = () => {
+function buy() {
   return (
-    <div>buy</div>
+    <div>
+      
+    </div>
   )
 }
 
