@@ -3,7 +3,6 @@
 import { useRouter } from "next/navigation";
 import { useEffect, } from "react";
 import { usePrivy } from "@privy-io/react-auth";
-import { ethers } from "ethers";
 import Head from "next/head";
 
 
@@ -21,17 +20,6 @@ export default function DashboardPage() {
       router.push("/");
     }
   }, [ready, authenticated, router]);
-
-// filtering/displaying
-// Get the address of the Signer
-myAddress = await signer.getAddress()
-// Filter for all token transfers from me
-filterFrom = daiContract.filters.Transfer(myAddress, null);
-// Filter for all token transfers to me
-filterTo = daiContract.filters.Transfer(null, myAddress);
-// List all transfers ever sent to me
-await daiContract.queryFilter(filterTo)
-
 
   return (
     <>
