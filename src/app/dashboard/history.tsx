@@ -1,0 +1,38 @@
+import React from 'react'
+
+function history() {
+	return (
+		<div id='history' className='mt-10'>
+			<h1 className="text-3xl font-bold underline mb-5">History</h1>
+			<table className="table-auto border-collapse border border-gray-300 w-full text-left">
+			<thead className="">
+				<tr>
+				<th className="border border-gray-300 px-4 py-2">No.</th>
+				<th className="border border-gray-300 px-4 py-2">Action</th>
+				<th className="border border-gray-300 px-4 py-2">WalletAddress</th>
+				<th className="border border-gray-300 px-4 py-2">Price (Eth)</th>
+				<th className="border border-gray-300 px-4 py-2">Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr className="">
+				<td className="border border-gray-300 px-4 py-2">1</td>
+				<td className="border border-gray-300 px-4 py-2">Sell</td>
+				<td className="border border-gray-300 px-4 py-2">0x123...abc</td>
+				<td className="border border-gray-300 px-4 py-2">1</td>
+				<td className="border border-gray-300 px-4 py-2">2025-04-01</td>
+				</tr>
+				<tr className="">
+				<td className="border border-gray-300 px-4 py-2">2</td>
+				<td className="border border-gray-300 px-4 py-2">Buy</td>
+				<td className="border border-gray-300 px-4 py-2">0x456...def</td>
+				<td className="border border-gray-300 px-4 py-2">3</td>
+				<td className="border border-gray-300 px-4 py-2">2025-03-20</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+	)
+}
+
+export default history
